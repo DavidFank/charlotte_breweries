@@ -1,11 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Breweries</h1>
+<h1>Charlotte Brewries</h1>
 
 <table>
   <thead>
     <tr>
       <th>Name</th>
+      <th>Image</th>
       <th>Location</th>
       <th>Description</th>
       <th>Rating</th>
@@ -17,6 +18,7 @@
     <% @breweries.each do |brewery| %>
       <tr>
         <td><%= brewery.name %></td>
+        <td><%= image_tag brewery.image.url, width: '100%' %></td>
         <td><%= brewery.location %></td>
         <td><%= brewery.description %></td>
         <td><%= brewery.rating %></td>
