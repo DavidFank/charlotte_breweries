@@ -27,6 +27,14 @@ gem 'better_errors', '~> 2.1', '>= 2.1.1'
 
 gem 'devise', '~> 4.2'
 
+gem 'cancancan', '~> 1.15'
+
+gem 'paperclip', '~> 5.1'
+
+gem 'simple_form', '~> 3.2', '>= 3.2.1'
+
+
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
