@@ -33,6 +33,8 @@ gem 'paperclip', '~> 5.1'
 
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 
+gem 'seed_dump', '~> 3.2', '>= 3.2.4'
+
 
 
 
