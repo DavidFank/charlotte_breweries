@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-.jumbotron{
+.hotdogs{
 	background-image: url(https://slack-imgs.com/?c=1&url=https%3A%2F%2Fstatic.pexels.com%2Fphotos%2F8847%2Ffood-night-drink-glass-landscape.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -24,14 +24,14 @@
 	margin: -40px;
 }
 
-.jumbotron h2 {
+.hotdogs h2 {
 	font: center;
 	font-size: 40px;
 	padding-top: 100px;
 	text-align: center;
 	color: white;
 }
-.jumbotron h3 {
+.hotdogs h3 {
 	text-align: center;
 	font-size: 30px;
 	color: white;

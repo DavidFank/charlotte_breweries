@@ -1,35 +1,23 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Charlotte Brewries</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Image</th>
-      <th>Location</th>
-      <th>Description</th>
-      <th>Rating</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @breweries.each do |brewery| %>
-      <tr>
-        <td><%= brewery.name %></td>
-        <td><%= image_tag brewery.image.url, width: '100%' %></td>
-        <td><%= brewery.location %></td>
-        <td><%= brewery.description %></td>
-        <td><%= brewery.rating %></td>
-        <td><%= link_to 'Show', brewery %></td>
-        <td><%= link_to 'Edit', edit_brewery_path(brewery) %></td>
-        <td><%= link_to 'Destroy', brewery, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
+<h1 style="font-family:Shrikhand" align='center'> You Look Like You Could Use a Drink</h1>
 <br>
-
-<%= link_to 'New Brewery', new_brewery_path %>
+<div class='jumbotron text-center'>
+  <h2 style="font-family:Raleway">Filter Charlotte Breweries</h2>
+    <div class="btn-group" role="group" aria-label="People Groups">
+        <%= link_to 'All', breweries_path, class: "btn btn-default" %>
+        <%= link_to "Nearby", breweries_path, class: "btn btn-default" %>
+        <%= link_to "By Rating", breweries_path, class: "btn btn-default" %>
+        <%= link_to "I Can't Decide", breweries_path, class: "btn btn-default" %>
+    </div>
+</div>
+<br>
+<div class="index">
+   <% @breweries.each do |brewery| %>
+   <div class="col-md-4">
+       <div class="well center-it" style="background-color:#EEEEEE">
+           <p><%= image_tag brewery.image.url, width: '100%' %></p>
+           <h3><%= link_to brewery.name, brewery, style:"font-family:Raleway" %></h3>
+       </div>
+   </div>
+   
+   <% end %>
+</div>
