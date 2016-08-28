@@ -14,3 +14,14 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+var person = prompt("you must be at least 21 years of age to veiw this page, Please enter your age");
+
+if (person > 20) {
+    alert("welcome to BrewCrew!!!")
+}
+else {
+
+	alert("I'm sorry youngster but you are not old enought to visit this page") 
+	window.location.href = "https://youtu.be/EY37BFmVxwQ"
+
+}
