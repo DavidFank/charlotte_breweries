@@ -13,3 +13,50 @@
  *= require_tree .
  *= require_self
  */
+.jumbotron{
+	background-image: url(https://slack-imgs.com/?c=1&url=https%3A%2F%2Fstatic.pexels.com%2Fphotos%2F8847%2Ffood-night-drink-glass-landscape.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 800px;
+	/*min-height: 500px;*/
+	width: auto;
+	margin: -40px;
+}
+
+.jumbotron h2 {
+	font: center;
+	font-size: 40px;
+	padding-top: 100px;
+	text-align: center;
+	color: white;
+}
+.jumbotron h3 {
+	text-align: center;
+	font-size: 30px;
+	color: white;
+}
+
+#nav-container	{
+
+	width: 100%;
+	height: 60px;
+
+}
+.nav-links	{
+
+	float: left;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	color: white;
+	transition: background-color 0.5s ease;
+	background-color: #111;
+	
+}
+
+.nav-links:hover {
+
+	background-color: #333;
+
+}

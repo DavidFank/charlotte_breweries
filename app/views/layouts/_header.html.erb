@@ -1,0 +1,14 @@
+      <div id="nav-home" class="nav-links">
+          <h4><%= link_to 'Breweries', breweries_path %></h4>
+      </div>
+
+      <div id="nav-login" class="nav-links" style="inline-block">
+        <% if current_user %>
+          <h4><%= link_to 'Log Out', edit_user_registration_path %></h4>
+          
+        <% else %>
+          <h4><%= link_to "Login", new_user_session_path %></h4>
+        <% end %>        
+      </div>
+
+ </div>
