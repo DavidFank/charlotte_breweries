@@ -16,68 +16,68 @@
 
 
 .hotdogs{
-	background-image: url(https://slack-imgs.com/?c=1&url=https%3A%2F%2Fstatic.pexels.com%2Fphotos%2F8847%2Ffood-night-drink-glass-landscape.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 800px;
-	width: auto;
+    background-image: url(https://slack-imgs.com/?c=1&url=https%3A%2F%2Fstatic.pexels.com%2Fphotos%2F8847%2Ffood-night-drink-glass-landscape.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+    width: auto;
 }
-
-.hotdogs h2 {
-	font: center;
-	font-size: 58px;
-	padding-top: 100px;
-	text-align: center;
-	color: white;
-	font-family: 'Shrikhand';
-
+.hotdogs h1 {
+    font: center;
+    font-size: 58px;
+    text-align: center;
+    color: white;
+    font-family: 'Shrikhand';
 }
 .hotdogs h3 {
-	text-align: center;
-	font-size: 30px;
-	color: white;
-	font-family: 'Raleway';
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-family: 'Raleway';
 }
-
-#nav-container	{
-
-	width: 100%;
-	height: 60px;
-	position: fixed;
-
+.hotdogs p {
+    padding-top: 100px;
+    text-align: center;
+    font-family: 'Amatic SC';
+    font-size: 24px;
+    color: white;
 }
-.nav-links	{
-
-	float: left;
-	width: 50%;
-	height: 100%;
-	text-align: center;
-	color: white;
-	transition: background-color 0.5s ease;
-	background-color: #111;
-	font-family: 'Raleway';
-	
+#nav-container  {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top:50%;
 }
-
+.nav-links  {
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    transition: background-color 0.5s ease;
+    background-color: #111;
+    font-family: 'Raleway';
+    
+}
 .nav-links:hover {
-	background-color: #333;
+    background-color: #333;
 }
-
 .cheese {
-	background-image: url('coldbrew.jpg');
-	height: 300px;
-	font-family:'Shrikhand';
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('drinkbeer.jpg');
+    height: 400px;
+    font-family:'Shrikhand';
 }
-
 #centerme {
-	position:relative;
+    position:relative;
     top:40%;    
     left:0;
     width:100%;
-    color: black;
+    color: white;
 }
-
 .raleway {
-	font-family: 'Raleway';
+    font-family: 'Raleway';
+}
+.home {
+    align-content: center;
 }
