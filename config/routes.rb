@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'storefront/all_breweries'
+
+  get 'storefront/random_breweries'
+
+  get 'storefront/nearby_breweries'
+
+  get 'storefront/ratings_breweries'
+
   root 'breweries#home'
   devise_for :users
   resources :breweries
