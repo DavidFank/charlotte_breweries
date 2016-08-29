@@ -1,6 +1,6 @@
 class BreweriesController < ApplicationController
   before_action :set_brewery, only: [:show, :edit, :update, :destroy]
-
+  authorize_resource
   # GET /breweries
   # GET /breweries.json
   def index

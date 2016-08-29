@@ -27,7 +27,7 @@ gem 'better_errors', '~> 2.1', '>= 2.1.1'
 
 gem 'devise', '~> 4.2'
 
-gem 'cancancan', '~> 1.15'
+gem 'cancancan'
 
 gem 'paperclip', '~> 5.1'
 

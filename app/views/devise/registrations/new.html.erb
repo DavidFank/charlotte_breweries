@@ -15,7 +15,9 @@
     <% end %><br />
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
-
+  <div class="field hidden">
+    <%= f.text_field :role, value: "guest" %>
+  </div>
   <div class="field">
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>

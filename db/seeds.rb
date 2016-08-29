@@ -1,6 +1,3 @@
-User.create!([
-  {email: "david.r.fankhauser@gmail.com", encrypted_password: "$2a$11$srJdClb7A93Ue7QivHueAebw7lHFtfX7HBJPWXheI5jXnEcR.5BoS", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 3, current_sign_in_at: "2016-08-28 23:19:41", last_sign_in_at: "2016-08-28 19:36:01", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1"}
-])
 Brewery.create!([
   {name: "Birdsong Brewing Company", location: "1016 North Davidson Street", description: "", rating: nil, website: "ll", neighborhood: "Noda", wifi: "Yes", live_music: "", pet_friendly: "", dining: "", outdoor_seating: "", phone_number: "", food_trucks: "", image_file_name: "birdsong_logo-300x300.jpg", image_content_type: "image/jpeg", image_file_size: 28164, image_updated_at: "2016-08-28 22:17:16"},
   {name: "Free Range Brewing ", location: "2320 North Davidson Street", description: "", rating: nil, website: "", neighborhood: "", wifi: "yes", live_music: "", pet_friendly: "", dining: "", outdoor_seating: "", phone_number: "", food_trucks: "", image_file_name: "1l-EWGFo.jpg", image_content_type: "image/jpeg", image_file_size: 56060, image_updated_at: "2016-08-28 23:50:00"},
