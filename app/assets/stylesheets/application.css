@@ -14,7 +14,15 @@
  *= require_self
  */
 
-
+.index h6 {
+	text-align: center;
+}
+.index h3 {
+	text-align: center;
+}
+.index  {
+	align-content: center;
+}
 .hotdogs{
 	background-image: url(https://slack-imgs.com/?c=1&url=https%3A%2F%2Fstatic.pexels.com%2Fphotos%2F8847%2Ffood-night-drink-glass-landscape.jpg);
 	background-size: cover;
