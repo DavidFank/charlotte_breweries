@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'filter/breweries_nearby'
+
   root 'breweries#home'
   devise_for :users
   resources :breweries

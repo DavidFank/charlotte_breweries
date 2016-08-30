@@ -17,17 +17,4 @@
     </div>
 </div>
 <br>
-<div class="index">
-   <% @breweries.each do |brewery| %>
-   <div class="col-md-4">
-       <div class="well center-it" style="background-color:#EEEEEE">
-           <p><%= image_tag brewery.image.url, height: '200px' %></p>
-           <h3><%= link_to brewery.name, brewery, style:"font-family:Raleway" %></h3>
-           <h6> <%= brewery.neighborhood %> </h6>
-           <h6> Rating: <%= brewery.rating %></h6>
-       </div>
-   </div>
-   
-   <% end %>
-</div>
-</div>
+<div id="map-canvas"></div>
