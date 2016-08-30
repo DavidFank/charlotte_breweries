@@ -41,6 +41,10 @@ gem 'geocoder', '~> 1.3', '>= 1.3.7'
 
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 
+gem 'sweet-alert'
+gem 'sweet-alert-confirm'
+
+
 
 
 # Use ActiveModel has_secure_password

@@ -1,62 +1,132 @@
-<p id="notice"><%= notice %></p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="show.css">
+</head>
+<body>
 
-<p>
-  <strong>Name:</strong>
-  <%= @brewery.name %>
-</p>
 
-<p>
-  <strong>Location:</strong>
-  <%= @brewery.location %>
-</p>
+<div class="showmain">
+    <div id="bannershow">
+      <h1 align="center"><%= @brewery.name %></h1>
+      <h4 align="center"><%= @brewery.neighborhood %></h4>
+      <h6 align="center"><%= @brewery.location %></h6>
+      <h6 align="center"><%= @brewery.phone_number %> | <%= @brewery.website %></h6>
+    </div>
+</div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @brewery.description %>
-</p>
 
-<p>
-  <strong>Rating:</strong>
-  <%= @brewery.rating %>
-</p>
-<p>
-  <strong>Neighborhood:</strong>
-  <%= @brewery.neighborhood %>
-</p>
+<div class="brewdesc">
+  <h3><%= @brewery.description %></h3>
+</div>
 
-<p>
-  <strong>Website:</strong>
-  <%= @brewery.website %>
-</p>
+<div class="line">
+  <HR SIZE="6">
+</div>
 
-<p>
-  <strong>Live Music:</strong>
-  <%= @brewery.live_music %>
-</p>
+<div class='container'>
+  <div class='row'>
+    <div class='col-md-4 img-responsive'>
+      <div class='iconsize'>
+      <img src="http://www.iconarchive.com/download/i91420/icons8/windows-8/Network-Wifi.ico" class="img-responsive">
+      </div>
+      <div class='icondeats'>
+        <h2>Wifi</h2>
+      </div>
+      <div class='iconinfo'>
+        <strong><p><%= @brewery.wifi %></p></strong>
+      </div>
+    </div>
 
-<p>
-  <strong>Pet Friendly:</strong>
-  <%= @brewery.pet_friendly %>
-</p>
-<p>
-  <strong>Dining:</strong>
-  <%= @brewery.dining %>
-</p>
-<p>
-  <strong>Outdoor Seating:</strong>
-  <%= @brewery.outdoor_seating %>
-</p>
-<p>
-  <strong>Phone Number:</strong>
-  <%= @brewery.phone_number %>
-</p>
+    <div class='col-md-4 img-responsive'>
+      <div class='iconsize'>
+        <img src="http://downloadicons.net/sites/default/files/dog-icon-86451.png" class="img-responsive">
+      </div>
+      <div class='icondeats'>
+        <h2>Dog-Friendly</h2>
+      </div>
+      <div class='iconinfo'>
+        <strong><p><%= @brewery.pet_friendly %></p></strong>
+      </div>
+    </div>
 
-<p>
-  <strong>Food Trucks:</strong>
-  <%= @brewery.food_trucks %>
-</p>
+    <div class='col-md-4 img-responsive'>
+      <div class='iconsize'>
+        <img src="http://www.iconarchive.com/download/i95965/iconsmind/outline/Electric-Guitar.ico" class="img-responsive">
+      </div>
+      <div class='icondeats'>
+        <h2>Live Music</h2>
+      </div>
+      <div class='iconinfo'>
+        <strong><p><%= @brewery.live_music %></p></strong>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
 
-<% if can? :create, Brewery %>
-  <%= link_to 'Edit', edit_brewery_path(@brewery) %> |
+<div class='container'>
+  <div class='row'>
+  <div class='col-md-4 img-responsive'>
+      <div class='iconsize'>
+        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/745-200.png" class="img-responsive">
+      </div>
+      <div class='icondeats'>
+        <h2>Food Trucks</h2>
+      </div>
+      <div class='iconinfo'>
+        <strong><p><%= @brewery.food_trucks %></p></strong>
+      </div>
+    </div>
+
+
+    <div class='col-md-4 img-responsive'>
+      <div class='iconsize'>
+        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/38383-200.png" class="img-responsive">
+      </div>
+      <div class='icondeats'>
+        <h2>Outdoor Seating</h2>
+      </div>
+      <div class='iconinfo'>
+        <strong><p><%= @brewery.outdoor_seating %></p></strong>
+      </div>
+    </div>
+
+    <div class='col-md-4 img-responsive'>
+      <div class='iconsize'>
+        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/63079-200.png" class="img-responsive">
+      </div>
+      <div class='icondeats'>
+        <h2>Dining</h2>
+      </div>
+      <div class='iconinfo'>
+        <strong><p><%= @brewery.dining %></p></strong>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+
+
+<div class="mybtn text-center">
+      <%= link_to "Back", breweries_path, class:"btn btn-lg" %>
+      <% if can? :create, Brewery %>
+  <%= link_to 'Edit', edit_brewery_path(@brewery), class:"btn btn-lg" %>
 <% end %>
-<%= link_to 'Back', breweries_path %>
+</div>
+
+  </div>
+</div>
+</div>
+
+
+

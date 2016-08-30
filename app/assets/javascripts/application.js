@@ -27,3 +27,33 @@ $(document).ready(function (){
       
     google.maps.event.addDomListener(window, 'load', initialize);
 });
+
+
+
+function codeAddress() {
+      var person = swal({   title: "Please verify your age.",  
+            text: "How old are you?",
+             type: "input",
+             closeOnConfirm: false,
+             showCancelButton: false,  
+             animation: "slide-from-top",   
+             inputPlaceholder: "How old are you?" }, 
+             function(isConfirm){
+                if (isConfirm >20) {
+              swal({
+                title: "Welcome",
+                text: 'You are now entering BrewCrew!',
+                type: 'success',
+                closeOnConfirm: true
+            });
+        } else {
+            swal({
+                title: "Sorry Youngster", 
+                text:"You're not old enough to enter this site.", 
+                type:"error",
+                showConfirmButton: false
+            });
+        }
+    });
+};
+        window.onload = codeAddress;
