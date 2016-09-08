@@ -3,7 +3,6 @@
 <head>
   <title>Charlotte Breweries</title>
   <%= stylesheet_link_tag    'application' %>
-  <%= javascript_include_tag 'application'%>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"  %>
   <%= favicon_link_tag 'favicon.ico' %>
@@ -21,15 +20,15 @@
 
 <%= render 'layouts/header' %>
 <%= yield %>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDna1eF04anDlo84QIVzRls1o9syyYSpuA"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key="></script>
 
 <script type="text/javascript">
 	var mapOptions = {
-	  zoom: 13,
-	  center: new google.maps.LatLng(51.5,-0.11)
-	}
+	  zoom: 11,
+	  center: new google.maps.LatLng(35.227087,-80.843127)}
 
 	var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
 
 	var transitLayer = new google.maps.TransitLayer();
 	transitLayer.setMap(map);

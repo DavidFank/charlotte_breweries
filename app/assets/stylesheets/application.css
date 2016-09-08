@@ -15,8 +15,9 @@
  */
 
 #map-canvas {
-  width: 100%;
-  height: 500px;
+    align-content: center
+  width: 75%;
+  height: 400px;
 }
 .index h6 {
 	text-align: center;
