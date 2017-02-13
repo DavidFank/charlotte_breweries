@@ -13,23 +13,21 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+// 
 $(document).ready(function (){
 
-   function initialize() {
-  var myLatlng = new google.maps.LatLng(35.227087,-80.843127);
-  
-  var mapOptions = {
-    zoom: 8,
-    center: myLatlng,
-    scrollwheel: false    
-  }
-
-  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-
-
+    function initialize() {
+      var mapOptions = {
+      center: { lat: -34.397, lng: 150.644},
+      zoom: 8
+      };
+        
+      var map = new google.maps.Map(document.getElementById('map-canvas'),
+                mapOptions);    
+    }
+      
+    google.maps.event.addDomListener(window, 'load', initialize);
+});
 function codeAddress() {
       var person = swal({   title: "Please verify your age.",  
             text: "How old are you?",
